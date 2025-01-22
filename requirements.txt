@@ -7,7 +7,3 @@ requests==2.31.0
 httptools==0.6.0
 anyio==3.7.1
 h11==0.14.0
-source venv/bin/activate  # On Linux/macOS
-venv\Scripts\activate     # On Windows
-pip install fastapi uvicorn python-dotenv pydantic[dotenv] fastapi.middleware.cors
-pip install requests
