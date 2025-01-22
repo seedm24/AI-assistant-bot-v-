@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base URL for the backend
-const BASE_URL = "https://your-backend.onrender.com";
+const BASE_URL = "https://ai-assistant-bot-vm.vercel.app/";
 
 // Axios instance
 const api = axios.create({
