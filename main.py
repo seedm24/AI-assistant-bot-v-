@@ -1,8 +1,7 @@
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["https://ai-assistant-bot-vm.vercel.app"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 
+app = FastAPI()
+
+# Serve static files
+app.mount("/", StaticFiles(directory="build", html=True), name="static")
